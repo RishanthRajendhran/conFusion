@@ -1,0 +1,29 @@
+$(document).ready(function(){
+    $("#mycarousel").carousel( { interval: 2000 } );
+    $("#carouselButton").click(function(){
+        if($(this).children("span").hasClass("fa-pause"))           
+        {
+            $("#mycarousel").carousel('pause');
+        }
+        else 
+        {
+            $("#mycarousel").carousel('cycle');
+        }
+        $(this).children("span").toggleClass("fa-pause");
+        $(this).children("span").toggleClass("fa-play");
+    });
+});
+$(document).ready(function(){
+    $("#loginButton").click(function(){
+        $("#loginmodal").modal("toggle");
+    });
+    $("#reserveTableButton").click(function(){
+        $("#reserveATableModal").modal("toggle");
+    });
+    $("#closeLogin").click(function(){
+        $("#loginmodal").modal("toggle");
+    });
+    $("#closeReserve").click(function(){
+        $("#reserveATableModal").modal("toggle");
+    });
+});

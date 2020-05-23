@@ -10,12 +10,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
-    <!-- endbuild -->
 </head>
 
 <body>
@@ -278,12 +276,43 @@
            </div>
         </div>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-    <!-- endbuild -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+ <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+ <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carouselButton").click(function(){
+                if($(this).children("span").hasClass("fa-pause"))
+                {
+                    $("#mycarousel").carousel('pause');
+                }
+                else 
+                {
+                    $("#mycarousel").carousel('cycle');
+                }
+                $(this).children("span").toggleClass("fa-pause");
+                $(this).children("span").toggleClass("fa-play");
+            });
+        });
+    </script>
+    <!--Assignment 4 Task 2&3 -->
+    <script>
+        $(document).ready(function(){
+            $("#loginButton").click(function(){
+                $("#loginmodal").modal("toggle");
+            });
+            $("#reserveTableButton").click(function(){
+                $("#reserveATableModal").modal("toggle");
+            });
+            $("#closeLogin").click(function(){
+                $("#loginmodal").modal("toggle");
+            });
+            $("#closeReserve").click(function(){
+                $("#reserveATableModal").modal("toggle");
+            });
+        });
+    </script>
 </body>
 </html>

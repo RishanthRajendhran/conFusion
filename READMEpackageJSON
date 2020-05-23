@@ -1,0 +1,11 @@
+{
+  "//" : [
+      "onchange is used to set up a watch on a specific file(s) and run the specified command in case of changes",
+      "parallelshell can be used to run several npm commands simultaneously",
+      "rimraf deletes the specified directory",
+      "copyfiles is used to copy a set of files from one location to another",
+      "Compress the images used to render the webpade as much as possible without much loss of quality",
+      "Minify the HTML files using usemin (and concatenate all CSS and JS files after uglifying them)",
+      "build command will build the distribution folder which can be copied to web server to serve up the web page"
+  ]
+}
