@@ -52,3 +52,22 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+/* Assignment 4 Task 4 */
+#loginmodal .modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  #loginmodal .modal-header .close {
+    color: floralwhite; }
+
+#loginmodal .modal-body {
+  background-color: #D1C4E9; }
+
+#reserveATableModal .modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  #reserveATableModal .modal-header .close {
+    color: floralwhite; }
+
+#reserveATableModal .modal-body {
+  background-color: #D1C4E9; }

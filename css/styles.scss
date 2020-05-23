@@ -81,3 +81,39 @@ body{
     bottom:0px;
     z-index:1;
 }
+
+/* Assignment 4 Task 4 */
+
+#loginmodal
+{
+    .modal-header
+    {
+        background-color: $background-dark;
+        color:floralwhite;
+        .close
+        {
+            color:floralwhite;
+        }
+    }
+    .modal-body
+    {
+        background-color: $background-pale;
+    }
+}
+
+#reserveATableModal
+{
+    .modal-header
+    {
+        background-color: $background-dark;
+        color:floralwhite;
+        .close
+        {
+            color:floralwhite;
+        }
+    }
+    .modal-body
+    {
+        background-color: $background-pale;
+    }
+}
